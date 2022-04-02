@@ -13,8 +13,8 @@ passport.deserializeUser(function(user, done) {
 });
 
 passport.use(new GoogleStrategy({
-    clientID: "753371068512-4na2j552hcph514tnb4ab5gqtr3gd1b4.apps.googleusercontent.com",
-    clientSecret: "I7-UR898mowjlWGCSwFBQPF1",
+    clientID: "%753371068512-4na2j552hcph514tnb4ab5gqtr3gd1b4.apps.googleusercontent.com%",
+    clientSecret: "%I7-UR898mowjlWGCSwFBQPF1%",
     callbackURL: "/google/callback",
     passReqToCallback: true
   },
@@ -30,8 +30,8 @@ passport.use(new GoogleStrategy({
 
 
 passport.use(new FacebookStrategy({
-  clientID: "528163798194853",
-  clientSecret: "546b5a06fdd0b3a36d49d980402d20d1",
+  clientID: "%528163798194853%",
+  clientSecret: "%546b5a06fdd0b3a36d49d980402d20d1%",
   callbackURL: "http://localhost:3080/facebook/callback"
 },
 function(request, accessToken, refreshToken, profile, done) {
